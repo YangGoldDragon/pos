@@ -114,7 +114,7 @@
 
     },
     created: function () {
-      axios.get('//jspang.com/DemoApi/oftenGoods.php')
+      axios.get('http://jspang.com/DemoApi/oftenGoods.php')
         .then(response => {
           console.log(response);
           this.usedGoodsList = response.data;
@@ -123,7 +123,7 @@
           console.log('error');
           alert('网络错误，不可访问');
         });
-      axios.get('//jspang.com/DemoApi/typeGoods.php')
+      axios.get('http://jspang.com/DemoApi/typeGoods.php')
         .then(response => {
           console.log(response);
           this.hambGoods0 = response.data[0];
